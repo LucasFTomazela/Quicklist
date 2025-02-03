@@ -14,7 +14,31 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <h1>Quicklist</h1>
+    <img id="logo" src="./assets/logo.png" alt="Logo Quicklist" />
+    <main>
+      <a href="#"><span><- </span>Voltar</a>
+      <h1>Compras da semana</h1>
+      <form action="">
+        <div class="input-field">
+          <input
+            type="text"
+            name="new-item"
+            id="new-item"
+            placeholder="Adicione um novo item"
+          />
+          <button type="submit">Adicionar Item</button>
+        </div>
+        <div class="item">
+          <img
+            class="checkbox"
+            src="./assets/icons/stateDefault.svg"
+            alt="checkbox padrão"
+          />
+          <p class="item-name">Pão de forma</p>
+          <img class="trash" src="./assets/icons/trash.svg" alt="Lixeira" />
+        </div>
+      </form>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
