@@ -45,6 +45,10 @@ body {
   font: var(--paragraph);
 }
 
+main {
+  padding: 0 20px;
+}
+
 #logo {
   max-width: 160px;
   margin-block: 60px;
@@ -130,18 +134,26 @@ button:hover {
   border-radius: 12px;
   background-color: var(--background-secondary);
   padding: 8px 12px;
+  margin-bottom: 12px;
 
   .checkbox {
     margin-right: 16px;
-  }
+    cursor: pointer;
 
-  .trash {
-    margin-left: 16px;
+    &:hover,
+    &:focus-within {
+      background-image: url(../../assets/icons/stateHover.svg);
+    }
   }
+}
 
-  p {
-    font: var(--paragraph);
-    line-height: 20px;
-    width: 100%;
-  }
+.trash {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+p {
+  font: var(--paragraph);
+  line-height: 20px;
+  width: 100%;
 }
