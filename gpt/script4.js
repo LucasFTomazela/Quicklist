@@ -24,20 +24,11 @@ form.onsubmit = (event) => {
         : "./assets/icons/stateDefault.svg"
     }
   
-    imgTrash.onclick = () => {
-      newItem.remove()
-
-      const trashMSG = document.querySelector(".trash-msg")
-      trashMSG.classList.add("show")
-
-      const close = document.querySelector("#delete")
-      close.onclick = () => trashMSG.classList.remove("show")
-
-    }
-
+    imgTrash.onclick = () => newItem.remove()
+  
     shoppingList.appendChild(newItem)
     itemInput.value = ""
   } else {
-    alert("Texto Inválido")
+    console.log("Texto Inválido")
   }
 }
